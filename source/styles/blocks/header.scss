@@ -1,5 +1,13 @@
-.header {
-  background-color: #663399;
+.header__text {
   color: #ffffff;
-  padding: 10px 15px;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: -0.45px;
+}
+
+.header__title {
+  color: #1bff07;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -1.2px;
 }
