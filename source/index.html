@@ -6,7 +6,7 @@
   <title>Портфолио</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body class="page">
   <header class="header">
     <a class="logo-link" href="index.html">
       <img class="logo-img" src="#" alt="Логотип.">
@@ -33,5 +33,102 @@
     <p class="header__text">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
     <h1 class="header__title">Привет, я Саша — фронтенд разарботчик и дизайнер сайтов</h1>
   </header>
+  <main class="page__main">
+    <section class="projects">
+      <h2 class="projects__title">Самые свежие проекты</h2>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <a class="projects__link" href="#">
+            <h3 class="projects__item-title">Дизайн интерьера</h3>
+            <h4 class="projects__item-name">Метрика</h4>
+            <p class="projects__item-desc">дизайн,верстка, настройка</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a class="projects__link" href="#">
+            <h3 class="projects__item-title">Презентация продукта</h3>
+            <h4 class="projects__item-name">Nothing</h4>
+            <p class="projects__item-desc">Разработка интерфейса</p>
+          </a>
+        </li>
+        <li class="projects__item">
+          <a class="projects__link" href="#">
+            <h3 class="projects__item-title">Заказ путешествий</h3>
+            <h4 class="projects__item-name">TOPTRIP</h4>
+            <p class="projects__item-desc">Разработка интерфейса</p>
+          </a>
+        </li>
+      </ul>
+      <a class="projects__btn" href="#">Смотреть все проекты</a>
+    </section>
+    <section class="competencies">
+      <h2 class="competencies__title">Мои компетенции</h2>
+      <ul class="competencies__list">
+        <li class="competencies__item">
+          <h3 class="competencies__title">HTML и CSS</h3>
+          <p class="competencies__desc">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+        </li>
+        <li class="competencies__item">
+          <h3 class="competencies__title">JavaScript</h3>
+          <p class="competencies__desc">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+        </li>
+        <li class="competencies__item">
+          <h3 class="competencies__title">Работа с библиотеками и фреймворками</h3>
+          <p class="competencies__desc">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+        </li>
+        <li class="competencies__item">
+          <h3 class="competencies__title">Разработка для мобильных устройств и адаптивная верстка</h3>
+          <p class="competencies__desc">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="services">
+      <h2 class="services__title">Помогаю реализовать широкий спектр задач</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <div class="services__img"></div>
+          <h3 class="services__title">Разработка сайта под ключ</h3>
+          <p class="services__desc">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач
+            Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+        </li>
+        <li class="services__item">
+          <div class="services__img"></div>
+          <h3 class="services__title">Верстка сайтов</h3>
+          <p class="services__desc">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
+        </li>
+        <li class="services__item">
+          <div class="services__img"></div>
+          <h3 class="services__title">Разработка мобильного интерфейса</h3>
+          <p class="services__desc">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="communication">
+      <h2 class="communication__title">Для связи со мной заполните простую форму</h2>
+      <form class="form" action="#" method="post">
+        <label class="visually-hidden" for="name">Имя Фамилия</label>
+        <input class="form__field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <label class="visually-hidden" for="mail">Имя Фамилия</label>
+        <input class="form__field" type="email" name="mail" id="mail" placeholder="example@mail.com">
+        <button class="form__btn" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__desc">Портфолио фронтенд-разработчика Саши Орлова</p>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#">mail</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">telegram</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">instagram</a>
+      </li>
+    </ul>
+    <span class="footer__copyright">Все права защищены. 2023</span>
+    <a class="data-processing-policy" href="#">политика обработки данных</a>
+  </footer>
 </body>
 </html>
