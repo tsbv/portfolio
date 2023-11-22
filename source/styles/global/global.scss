@@ -28,3 +28,9 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.reset-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
