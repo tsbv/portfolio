@@ -114,11 +114,17 @@
     <section class="communication">
       <h2 class="communication__title">Для связи со мной заполните простую форму</h2>
       <form class="form" action="#" method="post">
-        <label class="visually-hidden" for="name">Имя Фамилия</label>
-        <input class="form__field" type="text" name="name" id="name" placeholder="Имя Фамилия">
-        <label class="visually-hidden" for="mail">Имя Фамилия</label>
-        <input class="form__field" type="email" name="mail" id="mail" placeholder="example@mail.com">
-        <button class="form__btn" type="submit">Отправить</button>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="visually-hidden" for="name">Имя Фамилия</label>
+            <input class="form__field field" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </li>
+          <li class="form__item">
+            <label class="visually-hidden" for="mail">Имя Фамилия</label>
+            <input class="form__field field" type="email" name="mail" id="mail" placeholder="example@mail.com">
+          </li>
+        </ul>
+        <button class="form__btn btn btn--main" type="submit">Отправить</button>
       </form>
     </section>
   </main>

@@ -1,0 +1,15 @@
+.field {
+  border: none;
+  padding: 0;
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &::placeholder {
+    text-align: start;
+    color: #ffffff;
+  }
+}
