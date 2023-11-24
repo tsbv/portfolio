@@ -1,0 +1,35 @@
+.competencies {
+  padding: 0 13px 100px 13px;
+}
+
+.competencies__title {
+  margin: 0 0 60px 0;
+  color: #ffffff;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.35px;
+}
+
+.competencies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.competencies__item-title {
+  margin: 0 0 15px 0;
+  padding: 46px 0 0 0;
+  color: #1bff07;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.competencies__desc {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.54px;
+}
