@@ -11,13 +11,12 @@
   background-color: #3b3d3b;
   padding: 9px 20px;
   color: #ffffff;
-  text-align: center;
+  text-align: start;
   font-family: "IBM Plex Mono", "Tahoma", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.45px;
-  text-align: start;
+  letter-spacing: -0.5px;
 
   &:focus-within {
     outline: none;
