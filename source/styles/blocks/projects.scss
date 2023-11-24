@@ -1,0 +1,76 @@
+.projects {
+  padding: 0 13px 100px 13px;
+}
+
+.projects__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+}
+
+.projects__list {
+  margin: 0 0 60px 0;
+}
+
+.projects__link {
+  display: block;
+  min-height: 445px;
+  padding: 26px 33px 50px 33px;
+
+  &--metrika {
+    background-image: url("../../images/project-metrika@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &--nothing {
+    background-image: url("../../images/project-nothing@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .projects__item-title {
+      max-width: 158px;
+    }
+  }
+
+  &--toptrip {
+    background-image: url("../../images/project-toptrip@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.projects__item-title {
+  margin: 0 0 273px 0;
+  padding: 6px;
+  max-width: 147px;
+  background-color: #1bff07;
+  text-align: center;
+  border-radius: 65px;
+  color: #000000;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.39px;
+}
+
+.projects__item-name {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+
+.projects__item-desc {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+}
+
+.projects__btn {
+  width: 100%;
+  padding: 28px 51px 29px 51px;
+}

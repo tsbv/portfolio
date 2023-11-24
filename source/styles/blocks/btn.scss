@@ -1,0 +1,18 @@
+.btn {
+  padding: 0;
+  display: block;
+  font-family: "IBM Plex Mono", "Tahoma", sans-serif;
+  width: 63px;
+  border: 0;
+  cursor: pointer;
+
+  &--main {
+    background-color: #1bff07;
+    border-radius: 8px;
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: -0.54px;
+  }
+}
