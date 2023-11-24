@@ -1,5 +1,6 @@
 /* GLOBAL */
 @import "./global/variables.scss";
+@import "./global/reset.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 
@@ -8,3 +9,4 @@
 @import "./blocks/header.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/projects.scss";
