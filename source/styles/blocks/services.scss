@@ -11,6 +11,12 @@
   letter-spacing: -1px;
 }
 
+.services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .services__img {
   min-height: 225px;
 
@@ -35,6 +41,7 @@
   }
 
   &--mobile-interface {
+    min-height: 162px;
     background-image: url("../../images/mobile-interface@1x.png");
     background-repeat: no-repeat;
 
