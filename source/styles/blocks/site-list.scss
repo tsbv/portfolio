@@ -1,3 +1,22 @@
 .site-list {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.site-list__link {
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    text-transform: lowercase;
+  }
 }

@@ -4,6 +4,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 51px 40px 21px 40px;
+  }
+}
+
+.footer__wrapper {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -31,6 +36,12 @@
     max-width: 392px;
     font-size: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 532px;
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
 }
 
 .footer__copyright {
@@ -43,5 +54,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    letter-spacing: -0.6px;
   }
 }

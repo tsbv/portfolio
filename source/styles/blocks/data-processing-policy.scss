@@ -11,4 +11,9 @@
     justify-self: end;
     font-size: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
 }

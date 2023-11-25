@@ -32,6 +32,10 @@
   &::after {
     bottom: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .nav__toggle-line {

@@ -24,6 +24,15 @@
       background-size: auto 100%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/programmer-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/programmer-desktop@2x.png");
+      background-size: auto 100%;
+    }
+  }
 }
 
 .communication__title {
@@ -37,6 +46,13 @@
 
   @media (min-width: $tablet-width) {
     max-width: 373px;
+    font-size: 40px;
+    line-height: 40.5px;
+    letter-spacing: -1.2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 553px;
     font-size: 40px;
     line-height: 40.5px;
     letter-spacing: -1.2px;

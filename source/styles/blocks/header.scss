@@ -29,6 +29,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, min-content);
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 94px 0;
+  }
 }
 
 .header__text {
@@ -60,5 +64,11 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: -1.8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 920px;
+    font-size: 80px;
+    letter-spacing: -2.4px;
   }
 }

@@ -17,6 +17,13 @@
   @media (min-width: $tablet-width) {
     max-width: 326px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 80px 0;
+    max-width: 403px;
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
 }
 
 .services__list {
@@ -53,6 +60,16 @@
         background-size: 100% auto;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      min-height: 200px;
+      background-image: url("../../images/website-development-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/website-development-desktop@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 
   &--website-layout {
@@ -69,6 +86,16 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../images/website-layout-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 200px;
+      background-image: url("../../images/website-layout-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/website-layout-desktop@2x.png");
         background-size: 100% auto;
       }
     }
@@ -92,6 +119,16 @@
         background-size: 100% auto;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      min-height: 200px;
+      background-image: url("../../images/mobile-interface-desktop@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/mobile-interface-desktop@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 }
 
@@ -101,9 +138,14 @@
   background-color: #191c19;
 
   @media (min-width: $tablet-width) {
+    padding: 32px 32px 55px 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 40px 64px 40px;
   }
 }
 
@@ -119,6 +161,11 @@
     font-size: 45px;
     letter-spacing: -1.35px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    letter-spacing: -1.65px;
+  }
 }
 
 .services__desc {
@@ -127,4 +174,9 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.54px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
 }
