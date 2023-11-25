@@ -19,4 +19,12 @@
     letter-spacing: -0.5px;
     text-transform: lowercase;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

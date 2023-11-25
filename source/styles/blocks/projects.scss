@@ -47,6 +47,14 @@
   @media (min-width: $tablet-width) {
     padding: 40px 35px;
   }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .projects__link--metrika {
@@ -113,6 +121,10 @@
 
     @media (min-width: $tablet-width) {
       max-width: 201px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 245px;
     }
   }
 }

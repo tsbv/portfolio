@@ -6,6 +6,7 @@
   line-height: normal;
   letter-spacing: -0.5px;
   opacity: 0.5;
+  transition: 0.3s ease-in-out;
 
   @media (min-width: $tablet-width) {
     justify-self: end;
@@ -15,5 +16,15 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     letter-spacing: -0.6px;
+  }
+
+  &:hover {
+    color: #1bff07;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.3s ease-in-out;
   }
 }

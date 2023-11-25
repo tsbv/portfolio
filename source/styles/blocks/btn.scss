@@ -13,6 +13,7 @@
     font-size: 18px;
     line-height: normal;
     letter-spacing: -0.54px;
+    transition: 0.3s ease-in-out;
 
     @media (min-width: $tablet-width) {
       font-size: 24px;
@@ -22,6 +23,18 @@
     @media (min-width: $desktop-width) {
       font-size: 30px;
       letter-spacing: -1px;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: rgba(27, 255, 7, 0.1);
+      outline: 1px dashed #1bff07;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:active {
+      color: #1bff07;
+      transition: 0.3s ease-in-out;
     }
   }
 }
