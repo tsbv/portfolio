@@ -47,102 +47,102 @@
   @media (min-width: $tablet-width) {
     padding: 40px 35px;
   }
+}
 
-  &--metrika {
-    background-image: url("../../images/project-metrika@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+.projects__link--metrika {
+  background-image: url("../../images/project-metrika@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-metrika@2x.png");
+    background-size: 100% auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/project-metrika-tablet@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-metrika@2x.png");
+      background-image: url("../../images/project-metrika-tablet@2x.png");
       background-size: 100% auto;
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../../images/project-metrika-tablet@1x.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-metrika-tablet@2x.png");
-        background-size: 100% auto;
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 550px;
-      background-image: url("../../images/project-metrika-desktop@1x.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-metrika-desktop@2x.png");
-        background-size: 100% auto;
-      }
     }
   }
 
-  &--nothing {
-    background-image: url("../../images/project-nothing@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+  @media (min-width: $desktop-width) {
+    min-height: 550px;
+    background-image: url("../../images/project-metrika-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-nothing@2x.png");
+      background-image: url("../../images/project-metrika-desktop@2x.png");
       background-size: 100% auto;
     }
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      background-image: url("../../images/project-nothing-tablet@1x.png");
+.projects__link--nothing {
+  background-image: url("../../images/project-nothing@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-nothing-tablet@2x.png");
-        background-size: 100% auto;
-      }
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-nothing@2x.png");
+    background-size: 100% auto;
+  }
 
-    @media (min-width: $desktop-width) {
-      min-height: 550px;
-      background-image: url("../../images/project-nothing-desktop@1x.png");
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/project-nothing-tablet@1x.png");
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-nothing-desktop@2x.png");
-        background-size: 100% auto;
-      }
-    }
-
-    .projects__item-title {
-      max-width: 158px;
-
-      @media (min-width: $tablet-width) {
-        max-width: 201px;
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-nothing-tablet@2x.png");
+      background-size: 100% auto;
     }
   }
 
-  &--toptrip {
-    background-image: url("../../images/project-toptrip@1x.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+  @media (min-width: $desktop-width) {
+    min-height: 550px;
+    background-image: url("../../images/project-nothing-desktop@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-toptrip@2x.png");
+      background-image: url("../../images/project-nothing-desktop@2x.png");
       background-size: 100% auto;
     }
+  }
+
+  .projects__item-title {
+    max-width: 158px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../images/project-toptrip-tablet@1x.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-toptrip-tablet@2x.png");
-        background-size: 100% auto;
-      }
+      max-width: 201px;
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      min-height: 550px;
-      background-image: url("../../images/project-toptrip-desktop@1x.png");
+.projects__link--toptrip {
+  background-image: url("../../images/project-toptrip@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../images/project-toptrip-desktop@2x.png");
-        background-size: 100% auto;
-      }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-toptrip@2x.png");
+    background-size: 100% auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/project-toptrip-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-toptrip-tablet@2x.png");
+      background-size: 100% auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 550px;
+    background-image: url("../../images/project-toptrip-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-toptrip-desktop@2x.png");
+      background-size: 100% auto;
     }
   }
 }
