@@ -10,6 +10,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 150px 0;
+    background-position: top;
+    background-size: 100% auto;
     background-image: url("../../images/header-background-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
