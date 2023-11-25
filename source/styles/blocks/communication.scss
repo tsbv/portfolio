@@ -1,6 +1,29 @@
 .communication {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 7px;
+    padding: 0 13px;
+  }
+}
+
+.communication__wrapper {
   padding: 50px 13px 52px 13px;
   background-color: #191c19;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 50px 86px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 117px;
+    border-radius: 20px;
+    background-image: url("../../images/programmer-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/programmer-tablet@2x.png");
+      background-size: auto 100%;
+    }
+  }
 }
 
 .communication__title {
@@ -11,4 +34,11 @@
   font-weight: 400;
   line-height: 37px;
   letter-spacing: -1.05px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 373px;
+    font-size: 40px;
+    line-height: 40.5px;
+    letter-spacing: -1.2px;
+  }
 }

@@ -1,6 +1,20 @@
 .footer {
   padding: 47px 13px 34px 13px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 40px 21px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer__social {
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+  }
 }
 
 .footer__desc {
@@ -12,4 +26,22 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.5px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 392px;
+    font-size: 16px;
+  }
+}
+
+.footer__copyright {
+  color: #000000;
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }

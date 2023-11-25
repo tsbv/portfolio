@@ -1,5 +1,9 @@
 .services {
   padding: 0 13px 100px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 13px 110px 13px;
+  }
 }
 
 .services__title {
@@ -9,16 +13,28 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 326px;
+  }
 }
 
 .services__list {
   display: flex;
   flex-direction: column;
   gap: 60px;
+
+  @media (min-width: $tablet-width) {
+    gap: 32px;
+  }
 }
 
 .services__img {
   min-height: 225px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 162px;
+  }
 
   &--website-development {
     background-image: url("../../images/website-development@1x.png");
@@ -27,6 +43,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/website-development@2x.png");
       background-size: 100% 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/website-development-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/website-development-tablet@2x.png");
+        background-size: 100% auto;
+      }
     }
   }
 
@@ -37,6 +62,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/website-layout@2x.png");
       background-size: 100% 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/website-layout-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/website-layout-tablet@2x.png");
+        background-size: 100% auto;
+      }
     }
   }
 
@@ -49,6 +83,15 @@
       background-image: url("../../images/mobile-interface@2x.png");
       background-size: 100% 100%;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/mobile-interface-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/mobile-interface-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 }
 
@@ -56,6 +99,12 @@
   padding: 30px 22px 67px 22px;
   border-radius: 24px;
   background-color: #191c19;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+  }
 }
 
 .services__item-title {
@@ -65,6 +114,11 @@
   font-weight: 400;
   line-height: 110%;
   letter-spacing: -1.05px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    letter-spacing: -1.35px;
+  }
 }
 
 .services__desc {

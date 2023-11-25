@@ -1,16 +1,33 @@
 .projects {
   padding: 0 13px 100px 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 13px 150px 13px;
+  }
 }
 
 .projects__title {
+  max-width: 268px;
+  margin: 0 0 34px 0;
   color: #ffffff;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.9px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 53px 0;
+    max-width: none;
+    font-size: 45px;
+    letter-spacing: -1.35px;
+  }
 }
 
 .projects__list {
   margin: 0 0 60px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 64px 0;
+  }
 }
 
 .projects__link {
@@ -18,10 +35,28 @@
   min-height: 445px;
   padding: 26px 33px 50px 33px;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 35px;
+  }
+
   &--metrika {
     background-image: url("../../images/project-metrika@1x.png");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-metrika@2x.png");
+      background-size: 100% auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/project-metrika-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/project-metrika-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 
   &--nothing {
@@ -29,8 +64,26 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-nothing@2x.png");
+      background-size: 100% auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/project-nothing-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/project-nothing-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
+
     .projects__item-title {
       max-width: 158px;
+
+      @media (min-width: $tablet-width) {
+        max-width: 201px;
+      }
     }
   }
 
@@ -38,6 +91,20 @@
     background-image: url("../../images/project-toptrip@1x.png");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/project-toptrip@2x.png");
+      background-size: 100% auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/project-toptrip-tablet@1x.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../images/project-toptrip-tablet@2x.png");
+        background-size: 100% auto;
+      }
+    }
   }
 }
 
@@ -54,6 +121,12 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.39px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 165px;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
 }
 
 .projects__item-name {
@@ -61,16 +134,25 @@
   font-size: 28px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.84px;
+  letter-spacing: -0.8px;
 }
 
 .projects__item-desc {
   color: #ffffff;
   font-size: 16px;
   letter-spacing: -0.48px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    letter-spacing: -0.7px;
+  }
 }
 
 .projects__btn {
   width: 100%;
   padding: 28px 51px 29px 51px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
