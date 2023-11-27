@@ -1,9 +1,12 @@
 .site-list {
-  display: none;
-
-  @media (min-width: $desktop-width) {
+  @media (min-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
+    gap: 35px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
     gap: 50px;
   }
 }
@@ -14,7 +17,7 @@
   letter-spacing: -0.7px;
   text-transform: uppercase;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: 1024px) {
     font-size: 18px;
     letter-spacing: -0.5px;
     text-transform: lowercase;
