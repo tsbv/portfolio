@@ -34,6 +34,7 @@
 }
 
 .competencies__item-title {
+  position: relative;
   margin: 0 0 15px 0;
   padding: 46px 0 0 0;
   color: #1bff07;
@@ -42,10 +43,41 @@
   line-height: normal;
   letter-spacing: -0.84px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-width: $desktop-width) {
+      width: 45px;
+      height: 44px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 35px;
     letter-spacing: -1px;
   }
+}
+
+.competencies__item-title--html::before {
+  background-image: url("../../../images/icons/stack.svg#icon-html");
+}
+
+.competencies__item-title--js::before {
+  background-image: url("../../../images/icons/stack.svg#icon-js");
+}
+
+.competencies__item-title--frameworks::before {
+  background-image: url("../../../images/icons/stack.svg#icon-frameworks");
+}
+
+.competencies__item-title--adaptive::before {
+  background-image: url("../../../images/icons/stack.svg#icon-adaptive");
 }
 
 .competencies__desc {
