@@ -23,6 +23,9 @@
   margin: 0 0 60px 0;
 
   @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 30px;
     margin: 0 0 64px 0;
   }
 
@@ -33,8 +36,11 @@
 
 .projects__link {
   display: block;
-  min-height: 445px;
   padding: 26px 33px 50px 33px;
+  border-radius: 20px;
+  height: 578px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     padding: 40px 35px;
@@ -50,53 +56,18 @@
 }
 
 .projects__link--sedona {
-  background-image: url("../../images/project-sedona-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-radius: 50px;
+  background-image: url("../../images/project-sedona@1x.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/project-sedona-mobile@2x.jpg");
-    background-size: 100% auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../images/project-sedona@1x.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-sedona@2x.jpg");
-      background-size: 100% auto;
-    }
+    background-image: url("../../images/project-sedona@2x.jpg");
   }
 }
 
-.projects__link--nothing {
-  background-image: url("../../images/project-nothing@1x.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+.projects__link--mishka {
+  background-image: url("../../images/project-mishka@1x.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/project-nothing@2x.png");
-    background-size: 100% auto;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../../images/project-nothing-tablet@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-nothing-tablet@2x.png");
-      background-size: 100% auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 550px;
-    background-image: url("../../images/project-nothing-desktop@1x.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-nothing-desktop@2x.png");
-      background-size: 100% auto;
-    }
+    background-image: url("../../images/project-mishka@2x.jpg");
   }
 
   .projects__item-title {
@@ -112,38 +83,56 @@
   }
 }
 
-.projects__link--toptrip {
-  background-image: url("../../images/project-toptrip@1x.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+.projects__link--cat-energy {
+  background-image: url("../../images/project-cat-energy@1x.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/project-toptrip@2x.png");
-    background-size: 100% auto;
+    background-image: url("../../images/project-cat-energy@2x.jpg");
   }
+}
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../images/project-toptrip-tablet@1x.png");
+.projects__link--yagoda {
+  background-image: url("../../images/project-yagoda@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-toptrip-tablet@2x.png");
-      background-size: 100% auto;
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-yagoda@2x.jpg");
   }
+}
 
-  @media (min-width: $desktop-width) {
-    min-height: 550px;
-    background-image: url("../../images/project-toptrip-desktop@1x.png");
+.projects__link--glaccy {
+  background-image: url("../../images/project-glaccy@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/project-toptrip-desktop@2x.png");
-      background-size: 100% auto;
-    }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-glaccy@2x.jpg");
+  }
+}
+
+.projects__link--device {
+  background-image: url("../../images/project-device@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-device@2x.jpg");
+  }
+}
+
+.projects__link--technomart {
+  background-image: url("../../images/project-technomart@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-technomart@2x.jpg");
+  }
+}
+
+.projects__link--metrika {
+  background-image: url("../../images/project-metrika@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-metrika@2x.jpg");
   }
 }
 
 .projects__item-title {
-  margin: 0 0 273px 0;
+  margin: 0;
   padding: 6px;
   max-width: 147px;
   background-color: #1bff07;
