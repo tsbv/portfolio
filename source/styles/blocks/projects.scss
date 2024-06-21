@@ -55,6 +55,14 @@
   }
 }
 
+.projects__link--drink-to-go {
+  background-image: url("../../images/project-drink-to-go@1x.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/project-drink-to-go@2x.jpg");
+  }
+}
+
 .projects__link--sedona {
   background-image: url("../../images/project-sedona@1x.jpg");
 
@@ -68,18 +76,6 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/project-mishka@2x.jpg");
-  }
-
-  .projects__item-title {
-    max-width: 158px;
-
-    @media (min-width: $tablet-width) {
-      max-width: 201px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 245px;
-    }
   }
 }
 
@@ -134,25 +130,23 @@
 .projects__item-title {
   margin: 0;
   padding: 6px;
-  max-width: 147px;
-  background-color: #1bff07;
+  max-width: 135px;
+  background-color: $main-color;
   text-align: center;
   border-radius: 65px;
   color: #000000;
   font-family: "Manrope", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 100%;
   letter-spacing: -0.39px;
 
   @media (min-width: $tablet-width) {
-    max-width: 165px;
     font-size: 16px;
     letter-spacing: -0.48px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 206px;
     font-size: 20px;
     letter-spacing: -0.6px;
   }

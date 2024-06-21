@@ -6,7 +6,7 @@
   cursor: pointer;
 
   &--main {
-    background-color: #1bff07;
+    background-color: $main-color;
     border-radius: 8px;
     color: #000000;
     text-align: center;
@@ -28,12 +28,12 @@
     &:hover {
       color: #ffffff;
       background-color: rgba(27, 255, 7, 0.1);
-      outline: 1px dashed #1bff07;
+      outline: 1px dashed $main-color;
       transition: 0.3s ease-in-out;
     }
 
     &:active {
-      color: #1bff07;
+      color: $main-color;
       transition: 0.3s ease-in-out;
     }
   }

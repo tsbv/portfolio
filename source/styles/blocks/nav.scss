@@ -21,7 +21,7 @@
     position: absolute;
     width: 39px;
     height: 3px;
-    background-color: #1bff07;
+    background-color: $main-color;
     transition: all 0.3s ease 0s;
   }
 
@@ -41,7 +41,7 @@
 .nav__toggle-line {
   width: 39px;
   height: 3px;
-  background-color: #1bff07;
+  background-color: $main-color;
   transform: scale(1);
   border-radius: 2px;
 }
@@ -54,7 +54,7 @@
   &::before {
     width: 28px;
     top: 45%;
-    background-color: #1bff07;
+    background-color: $main-color;
     transform: rotate(-45deg) translate(0, -50%);
   }
 
@@ -66,7 +66,7 @@
 .nav--opened .nav__toggle::after {
   width: 28px;
   bottom: 54%;
-  background-color: #1bff07;
+  background-color: $main-color;
   transform: rotate(45deg) translate(0, 50%);
 
   @media (min-width: $desktop-width) {
