@@ -21,6 +21,9 @@
 
 .projects__list {
   margin: 0 0 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -31,23 +34,30 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 80px 0;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .projects__link {
   display: block;
-  height: 500px;
-  padding: 26px 33px 50px 33px;
+  height: 200px;
+  padding: 10px;
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
     padding: 40px 35px;
+    height: 450px;
   }
 
   &:hover {
     opacity: 0.9;
+
+    .projects__item-title {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
   }
 
   &:active {
@@ -130,7 +140,7 @@
 .projects__item-title {
   margin: 0;
   padding: 6px;
-  max-width: 135px;
+  max-width: 75px;
   background-color: $main-color;
   text-align: center;
   border-radius: 65px;
@@ -142,6 +152,8 @@
   letter-spacing: -0.39px;
 
   @media (min-width: $tablet-width) {
+    opacity: 0;
+    max-width: 135px;
     font-size: 16px;
     letter-spacing: -0.48px;
   }

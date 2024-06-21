@@ -38,6 +38,7 @@
 
 .hero__text-code {
   padding: 0 10px;
+  z-index: -1;
   color: #a46a5d;
   display: inline-block;
   position: relative;
@@ -62,7 +63,7 @@
 }
 
 .hero__title {
-  margin: 0 0 35px;
+  margin: 0 0 50px;
   color: $main-color;
   font-size: 40px;
   font-weight: 400;
