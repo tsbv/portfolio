@@ -1,17 +1,5 @@
-/* Мобильная навигация */
+import { initializeMobileNav } from './mobile-nav';
+import { initializeShowAllButton } from './show-all-btn';
 
-const nav = document.querySelector('.nav');
-const navToggle = document.querySelector('.nav__toggle');
-
-nav.classList.remove('nav--no-js');
-navToggle.classList.remove('nav__toggle--no-js');
-
-navToggle.addEventListener('click', () => {
-  if (nav.classList.contains('nav--closed')) {
-    nav.classList.remove('nav--closed');
-    nav.classList.add('nav--opened');
-  } else {
-    nav.classList.add('nav--closed');
-    nav.classList.remove('nav--opened');
-  }
-});
+initializeMobileNav(); // Инициализация мобильного меню
+initializeShowAllButton(); // Инициализация кнопки "Показать больше проектов"

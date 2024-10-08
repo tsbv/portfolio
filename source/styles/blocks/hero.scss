@@ -5,21 +5,37 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 700px 1fr;
+    gap: 74px;
   }
 }
 
 .hero__greeting {
-  grid-column: 1 / -1;
+  grid-column: 1;
 }
 
 .hero__competencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2;
-    transform: translateY(-71px);
     justify-self: end;
   }
+}
+
+.hero__github-link {
+  padding: 10px 50px;
+  display: block;
+  max-width: 350px;
+  font-size: 18px;
+  border-radius: 0;
 }
 
 .hero__text {
@@ -63,7 +79,7 @@
 }
 
 .hero__title {
-  margin: 0 0 50px;
+  margin: 0;
   color: $main-color;
   font-size: 40px;
   font-weight: 400;
@@ -79,8 +95,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 920px;
-    font-size: 80px;
+    max-width: 700px;
+    font-size: 73px;
     letter-spacing: -2.4px;
   }
 }
