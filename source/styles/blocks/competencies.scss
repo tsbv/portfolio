@@ -19,4 +19,8 @@
   color: #000000;
   padding: 10px;
   border-radius: 10px;
+
+  &:nth-child(-n + 3) {
+    box-shadow: 0 0 5px 3px #808080;
+  }
 }
