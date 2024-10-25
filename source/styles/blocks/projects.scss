@@ -84,6 +84,37 @@
   }
 }
 
+.projects__link--internship {
+  background-image:
+    image-set(
+      url("../../images/project-internship@1x.webp") 1x,
+      url("../../images/project-internship@2x.webp") 2x,
+      url("../../images/project-internship@1x.jpg") 1x,
+      url("../../images/project-internship@2x.jpg") 2x
+    );
+}
+
+.projects__link--lifetour {
+  background-image:
+    image-set(
+      url("../../images/project-lifetour@1x.webp") 1x,
+      url("../../images/project-lifetour@2x.webp") 2x,
+      url("../../images/project-lifetour@1x.jpg") 1x,
+      url("../../images/project-lifetour@2x.jpg") 2x
+    );
+}
+
+.projects__link--supergym {
+  background-image:
+    image-set(
+      url("../../images/project-supergym@1x.webp") 1x,
+      url("../../images/project-supergym@2x.webp") 2x,
+      url("../../images/project-supergym@1x.jpg") 1x,
+      url("../../images/project-supergym@2x.jpg") 2x
+    );
+}
+
+
 .projects__link--drink-to-go {
   background-image: url("../../images/project-drink-to-go@1x.jpg");
 

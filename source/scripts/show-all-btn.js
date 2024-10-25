@@ -3,7 +3,7 @@ const initializeShowAllButton = () => {
   const projectItemNodes = document.querySelectorAll('.projects__list .projects__item');
   const desktopMediaQuery = window.matchMedia('(min-width: 960px)');
   const updateVisibility = () => {
-    const visibleItems = desktopMediaQuery.matches ? 3 : 4;
+    const visibleItems = 6;
     projectItemNodes.forEach((projectItemNode, index) => {
       projectItemNode.style.display = index < visibleItems ? 'block' : 'none';
     });
