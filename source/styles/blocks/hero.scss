@@ -128,18 +128,22 @@
     opacity: 0;
     transform: translateY(30px) translateX(-10px) rotate(-2deg);
   }
+
   25% {
     opacity: 0.5;
     transform: translateY(-10px) translateX(5px) rotate(1deg);
   }
+
   50% {
     opacity: 1;
     transform: translateY(0) translateX(0) rotate(0deg);
   }
+
   75% {
     opacity: 1;
     transform: translateY(0) translateX(0) rotate(0deg);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0) translateX(0) rotate(0deg);
