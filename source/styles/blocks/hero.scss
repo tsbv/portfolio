@@ -83,14 +83,14 @@
   color: $main-color;
   font-size: 40px;
   font-weight: 400;
-  line-height: 47px;
+  line-height: 100%;
   letter-spacing: -1.2px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     max-width: 727px;
     grid-column: 1 / -1;
     font-size: 60px;
-    line-height: 70px;
     letter-spacing: -1.8px;
   }
 
@@ -98,5 +98,50 @@
     max-width: 700px;
     font-size: 73px;
     letter-spacing: -2.4px;
+  }
+}
+
+.hero__animate-flow {
+  display: inline-block;
+  animation: flowIntoView 4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.hero__portfolio {
+  color: rgba(175, 225, 175, 0.3);
+  animation-delay: 0.5s;
+}
+
+.hero__role {
+  display: block;
+  color: #b0c4de;
+  animation-delay: 1s;
+}
+
+.hero__author {
+  display: inline-block;
+  animation-delay: 1.5s;
+}
+
+@keyframes flowIntoView  {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) translateX(-10px) rotate(-2deg);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(-10px) translateX(5px) rotate(1deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0) rotate(0deg);
   }
 }
