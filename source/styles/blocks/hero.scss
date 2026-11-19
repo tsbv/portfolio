@@ -5,7 +5,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 700px 1fr;
+    grid-template-columns: 600px 1fr;
     gap: 74px;
   }
 }
@@ -109,6 +109,7 @@
 }
 
 .hero__role {
+  padding: 13px 0;
   display: block;
   color: #b0c4de;
 }

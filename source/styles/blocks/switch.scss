@@ -140,6 +140,34 @@
   background-size: cover;
 }
 
+.vibe-card--typographer {
+  background-color: #efeadf;
+  background-image:
+    image-set(
+      url("../../images/project-typographer@1x.webp") 1x,
+      url("../../images/project-typographer@2x.webp") 2x,
+      url("../../images/project-typographer@1x.png") 1x,
+      url("../../images/project-typographer@2x.png") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vibe-card--typing-speed {
+  background-color: #121316;
+  background-image:
+    image-set(
+      url("../../images/project-typing-speed@1x.webp") 1x,
+      url("../../images/project-typing-speed@2x.webp") 2x,
+      url("../../images/project-typing-speed@1x.png") 1x,
+      url("../../images/project-typing-speed@2x.png") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .vibe-card__tag {
   position: absolute;
   top: 20px;
