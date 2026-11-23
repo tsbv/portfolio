@@ -205,3 +205,31 @@
     transform: translateY(14px);
   }
 }
+
+.vibe-card--favicon-ai {
+  background-color: #f2efe8;
+  background-image:
+    image-set(
+      url("../../images/project-favicon-ai@1x.webp") 1x,
+      url("../../images/project-favicon-ai@2x.webp") 2x,
+      url("../../images/project-favicon-ai@1x.png") 1x,
+      url("../../images/project-favicon-ai@2x.png") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vibe-card--depth {
+  background-color: #0e1418;
+  background-image:
+    image-set(
+      url("../../images/project-depth@1x.webp") 1x,
+      url("../../images/project-depth@2x.webp") 2x,
+      url("../../images/project-depth@1x.png") 1x,
+      url("../../images/project-depth@2x.png") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
