@@ -53,8 +53,7 @@
   margin: 20px auto;
   padding: 10px 20px;
   min-height: 85px;
-  border-radius: 5px;
-  color: #ffffff;
+  border-radius: 8px;
 }
 
 .projects__link {
@@ -64,14 +63,19 @@
   border-radius: 20px;
   background-repeat: no-repeat;
   background-size: cover;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
   @media (min-width: $tablet-width) {
     padding: 40px 35px;
     height: 250px;
   }
 
-  &:hover {
-    opacity: 0.9;
+  &:hover,
+  &:focus-visible {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 $main-color;
 
     .projects__item-title {
       opacity: 1;
@@ -79,8 +83,14 @@
     }
   }
 
+  &:focus-visible {
+    outline: 2px dashed $main-color;
+    outline-offset: 5px;
+  }
+
   &:active {
-    opacity: 0.8;
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 $main-color;
   }
 }
 

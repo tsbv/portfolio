@@ -42,6 +42,15 @@
   cursor: pointer;
   transition: color 0.3s;
 
+  &:hover:not(.switch__btn--active) {
+    color: $main-color;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $main-color;
+    outline-offset: -6px;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 18px 12px;
     font-size: 20px;
@@ -98,7 +107,9 @@
   border-radius: 20px;
   color: #ffffff;
   text-decoration: none;
-  transition: transform 0.3s;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 
   &::after {
     position: absolute;
@@ -107,8 +118,20 @@
     content: "";
   }
 
-  &:hover {
-    transform: translateY(-6px);
+  &:hover,
+  &:focus-visible {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 $main-color;
+  }
+
+  &:focus-visible {
+    outline: 2px dashed $main-color;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 $main-color;
   }
 }
 

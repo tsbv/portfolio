@@ -3,24 +3,52 @@
 }
 
 .competencies__title {
-  margin: 0 0 29px;
+  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
   font-size: 25px;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba($main-color, 0.5), transparent);
+  }
 }
 
 .competencies__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
 }
 
 .competencies__item {
+  padding: 8px 13px;
+  border: 1px solid rgba($main-color, 0.35);
+  border-radius: 8px;
+  background-color: rgba($main-color, 0.07);
+  color: $main-color;
+  font-size: 15px;
   font-weight: 700;
-  background-color: $main-color;
-  color: #000000;
-  padding: 10px;
-  border-radius: 10px;
+  cursor: default;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:nth-child(-n + 3) {
-    box-shadow: 0 0 5px 3px #808080;
+    border-color: $main-color;
+    background-color: $main-color;
+    color: #000000;
+  }
+
+  &:hover {
+    transform: translate(-2px, -2px);
+    border-color: $main-color;
+    background-color: $main-color;
+    box-shadow: 3px 3px 0 rgba($main-color, 0.4);
+    color: #000000;
   }
 }
